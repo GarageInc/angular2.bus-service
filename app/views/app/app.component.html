@@ -1,61 +1,88 @@
-<div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" [routerLink]="['Main']">{{title}}</a>
-        </div>
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li class="active">
-                    <a [routerLink]="['Main']">Main</a>
-                </li>
-                <li>
-                    <a [routerLink]="['Projects']">Projects</a>
-                </li>
-            </ul>
+<!--<div class="navbar navbar-default navbar-fixed-top" role="navigation">-->
+    <!--<div class="container-fluid">-->
+        <!--<div class="navbar-header">-->
+            <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">-->
+                <!--<span class="sr-only">Toggle navigation</span>-->
+                <!--<span class="icon-bar"></span>-->
+                <!--<span class="icon-bar"></span>-->
+                <!--<span class="icon-bar"></span>-->
+            <!--</button>-->
+            <!--<a class="navbar-brand" [routerLink]="['Main']">{{title}}</a>-->
+        <!--</div>-->
+        <!--<div class="navbar-collapse collapse">-->
+            <!--<ul class="nav navbar-nav">-->
+                <!--<li class="active">-->
+                    <!--<a [routerLink]="['Main']">Main</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a [routerLink]="['Projects']">Projects</a>-->
+                <!--</li>-->
+            <!--</ul>-->
 
-            <ul class="nav navbar-nav navbar-right">
-                <li class="active">
-                    <a [routerLink]="['Login']">Login</a>
-                </li>
-                <li>
-                    <a [routerLink]="['Logout']">Logout</a>
-                </li>
+            <!--<ul class="nav navbar-nav navbar-right">-->
+                <!--<li class="active">-->
+                    <!--<a [routerLink]="['Login']">Login</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a [routerLink]="['Logout']">Logout</a>-->
+                <!--</li>-->
+            <!--</ul>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+<aside id="left-side" style="left: -207px; opacity: 0;">
+    <menu>
+        <li>
+            <a class="bookticket" [routerLink]="['ReservateTicket']">Забронировать билет</a>
+        </li>
+        <li>
+            <a [routerLink]="['CarPark']">Автопарк</a>
+            <ul>
+                <li><a [routerLink]="['CreateBus']"><i class="fa fa-angle-double-right fa-fw"></i> Добавить автобус</a></li>
             </ul>
-        </div>
-    </div>
-</div>
+        </li>
+        <li>
+            <a [routerLink]="['Trips']">Маршруты</a>
+            <ul>
+                <li><a [routerLink]="['CreateTrip']"><i class="fa fa-angle-double-right fa-fw"></i> Добавить маршрут</a></li>
+            </ul>
+        </li>
+    </menu>
+</aside>
+<header>
+    <nav>
+        <a class="menu-button"><i class="fa fa-bars"></i></a>
+        <a class="logo" href=""></a>
+        <a class="notification"><i class="fa fa-bell-o"></i></a>
+    </nav>
+</header>
 
 <div class="container-fluid">
     <logged-in-router-outlet></logged-in-router-outlet>
 </div>
 
-<footer>
-    <div class="navbar navbar-inverse navbar-fixed-bottom">
-        <div class="container">
-            <div class="navbar-collapse collapse" id="footer-body">
-                <ul class="nav navbar-nav">
-                    <li>{{title}}</li>
-                </ul>
-            </div>
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#footer-body">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <ul class="footer-bar-btns visible-xs">
-                    <li><a href="#" class="btn" title="History"><i class="fa fa-2x fa-clock-o blue-text"></i></a></li>
-                    <li><a href="#" class="btn" title="Favourites"><i class="fa fa-2x fa-star yellow-text"></i></a></li>
-                    <li><a href="#" class="btn" title="Subscriptions"><i class="fa fa-2x fa-rss-square orange-text"></i></a></li>
-                </ul>
-            </div>
+<!--<footer>-->
+    <!--<div class="navbar navbar-inverse navbar-fixed-bottom">-->
+        <!--<div class="container">-->
+            <!--<div class="navbar-collapse collapse" id="footer-body">-->
+                <!--<ul class="nav navbar-nav">-->
+                    <!--<li>{{title}}</li>-->
+                <!--</ul>-->
+            <!--</div>-->
+            <!--<div class="navbar-header">-->
+                <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#footer-body">-->
+                    <!--<span class="icon-bar"></span>-->
+                    <!--<span class="icon-bar"></span>-->
+                    <!--<span class="icon-bar"></span>-->
+                <!--</button>-->
+                <!--<ul class="footer-bar-btns visible-xs">-->
+                    <!--<li><a href="#" class="btn" title="History"><i class="fa fa-2x fa-clock-o blue-text"></i></a></li>-->
+                    <!--<li><a href="#" class="btn" title="Favourites"><i class="fa fa-2x fa-star yellow-text"></i></a></li>-->
+                    <!--<li><a href="#" class="btn" title="Subscriptions"><i class="fa fa-2x fa-rss-square orange-text"></i></a></li>-->
+                <!--</ul>-->
+            <!--</div>-->
 
-        </div>
-    </div>
-</footer>
+        <!--</div>-->
+    <!--</div>-->
+<!--</footer>-->

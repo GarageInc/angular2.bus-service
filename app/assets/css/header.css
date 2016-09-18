@@ -1,0 +1,85 @@
+#left-side {
+	background-color: #fff;
+	box-shadow: 0 0 6px -2px #444;
+	height: calc(100% - 58px);
+	position: fixed;
+	top: 58px;
+	transition: all .3s;
+	z-index: 99;
+}
+
+#left-side menu {
+	list-style: none;
+}
+
+#left-side menu li {
+	border-top: 1px solid #eee;
+}
+
+#left-side menu li a {
+	display: block;
+	width: 175px;
+	height: 45px;
+	padding: 0 16px;
+	line-height: 44px;
+}
+
+#left-side menu li a:hover {
+	background-color: #fcfcfc;
+}
+
+#left-side menu > li:first-child {
+	border-top: none;
+}
+
+#left-side menu > li:last-child {
+	border-bottom: 1px solid #eee;
+}
+
+body  header {
+	position: fixed;
+	left: 0;
+	top: 0;
+	background-color: #fff;
+	z-index: 100;
+	width: 100%;
+	height: 58px;
+	box-shadow: 0 0 6px -2px #444;
+}
+
+body  header nav {
+	position: relative;
+}
+
+body  header nav a {
+	background-color: #fff;
+	position: absolute;
+	top: 0;
+	display: block;
+	width: 58px;
+	height: 58px;
+	text-align: center;
+    vertical-align: middle;
+    line-height: 57px;
+	font-size: 21px !important;
+}
+
+body  header nav a:hover, body > header nav a:focus {
+	color: #444;
+	background-color: #f4f4f4;
+}
+
+body  header nav .menu-button {
+	left: 0;
+}
+
+body  header nav .logo {
+	left: 58px;
+	right: 58px;
+	background: #fff url('../images/design/logo.png') no-repeat center;
+	width: auto !important;
+}
+
+body  header nav .notification {
+	right: 0;
+}

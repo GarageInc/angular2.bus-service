@@ -1,4 +1,4 @@
-System.register(['angular2/router', "angular2/core", "../services/user.service", "../directives/logged-in-router-outlet", './user/login.component', "./user/logout.component", "./main.component", "./about/about.component"], function(exports_1, context_1) {
+System.register(['angular2/router', "angular2/core", "../services/user.service", "../directives/logged-in-router-outlet", './user/login.component', "./user/logout.component", "./about/about.component", "./carpark/car-park.component", "./carpark/create-bus.component", "./tickets/reservate-ticket.component", "./trips/trips.component"], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/router', "angular2/core", "../services/user.service",
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var router_1, core_1, user_service_1, logged_in_router_outlet_1, login_component_1, logout_component_1, main_component_1, about_component_1;
+    var router_1, core_1, user_service_1, logged_in_router_outlet_1, login_component_1, logout_component_1, about_component_1, car_park_component_1, create_bus_component_1, reservate_ticket_component_1, trips_component_1;
     var AppComponent;
     return {
         setters:[
@@ -32,26 +32,33 @@ System.register(['angular2/router', "angular2/core", "../services/user.service",
             function (logout_component_1_1) {
                 logout_component_1 = logout_component_1_1;
             },
-            function (main_component_1_1) {
-                main_component_1 = main_component_1_1;
-            },
             function (about_component_1_1) {
                 about_component_1 = about_component_1_1;
+            },
+            function (car_park_component_1_1) {
+                car_park_component_1 = car_park_component_1_1;
+            },
+            function (create_bus_component_1_1) {
+                create_bus_component_1 = create_bus_component_1_1;
+            },
+            function (reservate_ticket_component_1_1) {
+                reservate_ticket_component_1 = reservate_ticket_component_1_1;
+            },
+            function (trips_component_1_1) {
+                trips_component_1 = trips_component_1_1;
             }],
         execute: function() {
             AppComponent = (function () {
                 function AppComponent() {
-                    this.title = '@Carrier';
-                    this.subtitle = 'from PassToBus';
                 }
                 AppComponent = __decorate([
                     core_1.Component({
-                        selector: 'my-app',
+                        encapsulation: core_1.ViewEncapsulation.None,
+                        selector: 'bus-service-app',
                         templateUrl: 'app/views/app/app.component.html',
                         styleUrls: ['app/assets/css/app.component.css'],
                         directives: [
                             router_1.ROUTER_DIRECTIVES,
-                            // ProtectedDirective,
                             logged_in_router_outlet_1.LoggedInRouterOutlet
                         ],
                         providers: [
@@ -61,15 +68,35 @@ System.register(['angular2/router', "angular2/core", "../services/user.service",
                     }),
                     router_1.RouteConfig([
                         {
-                            path: '/main',
-                            name: 'Main',
-                            component: main_component_1.MainComponent,
-                        },
-                        {
                             path: '/about',
                             name: 'About',
                             component: about_component_1.AboutComponent,
                             useAsDefault: true
+                        },
+                        {
+                            path: '/carpark',
+                            name: 'CarPark',
+                            component: car_park_component_1.CarParkComponent,
+                        },
+                        {
+                            path: '/carpark/create',
+                            name: 'CreateBus',
+                            component: create_bus_component_1.CreateBusComponent,
+                        },
+                        {
+                            path: '/tickets',
+                            name: 'ReservateTicket',
+                            component: reservate_ticket_component_1.ReservateTicketComponent,
+                        },
+                        {
+                            path: '/trips',
+                            name: 'Trips',
+                            component: trips_component_1.TripsComponent,
+                        },
+                        {
+                            path: '/trips/create',
+                            name: 'CreateTrip',
+                            component: trips_component_1.TripsComponent,
                         },
                         {
                             path: '/login',

@@ -1,4 +1,60 @@
+@import url(font-awesome.css) screen;
+@import url(header.css) screen;
+@import url(form.css) screen;
+@import url(footer.css) screen;
+/*@import url(//fonts.googleapis.com/css?family=Roboto:300,400,400i,500&subset=cyrillic-ext) screen;*/
 
+* {padding: 0; margin: 0; border: 0; word-wrap: break-word;}
+nav, header, section, footer, aside, textarea {display: block;}
+
+html {
+    width: 100%;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    font: 16px 'Roboto';
+    color: #212121;
+}
+
+a, a:active {color: #444; text-decoration: none; cursor: pointer;}
+a:hover, .active {color: #777 !important; text-decoration: none;}
+
+.clearfix:after {content: ' '; display: table; clear: both;}
+
+.left {float: left;}
+.right {float: right;}
+
+#wrapper {
+    width: 900px;
+    max-width: 95%;
+    min-width: 300px;
+    margin: 72px auto 14px;
+}
+/* ----- main ----- */
+#content {
+    background-color: #fff;
+    margin: 14px 0;
+    border-radius: 5px;
+    box-shadow: 0px 3px 2px 0px rgba(0, 0, 0, 0.06);
+}
+
+#content article {
+    padding: 26px;
+    border-bottom: 1px solid #eeeeee;
+}
+#content article header h2 {
+    color: #f44336;
+    font: 300 1.125rem 'Roboto';
+    margin-bottom: 18px;
+}
+#content .fields .field {
+    margin-bottom: 11px;
+}
+
+/*LOADER*/
 * { font-family: Arial; }
 .sk-folding-cube {
     margin: 20px auto;

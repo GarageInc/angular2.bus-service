@@ -11,34 +11,60 @@ import {LogoutComponent} from "./user/logout.component";
 
 import {MainComponent} from "./main.component";
 import {AboutComponent} from "./about/about.component";
+import {CarParkComponent} from "./carpark/car-park.component";
+import {CreateBusComponent} from "./carpark/create-bus.component";
+import {ReservateTicketComponent} from "./tickets/reservate-ticket.component";
+import {TripsComponent} from "./trips/trips.component";
 
 @Component({
-  selector: 'my-app',
-  templateUrl: 'app/views/app/app.component.html',
-  styleUrls: ['app/assets/css/app.component.css'],
-  directives: [
+    encapsulation: ViewEncapsulation.None,
+    selector: 'bus-service-app',
+
+    templateUrl: 'app/views/app/app.component.html',
+    styleUrls: ['app/assets/css/app.component.css'],
+
+    directives: [
       ROUTER_DIRECTIVES,
-      // ProtectedDirective,
       LoggedInRouterOutlet
-  ],
-  providers: [
+    ],
+    providers: [
     ROUTER_PROVIDERS,
     UserService
-  ]
+    ]
 })
 
 
 @RouteConfig([
     {
-        path: '/main',
-        name: 'Main',
-        component: MainComponent,
-    }
-    ,{
         path: '/about',
         name: 'About',
         component: AboutComponent,
         useAsDefault: true
+    }
+    ,{
+        path: '/carpark',
+        name: 'CarPark',
+        component: CarParkComponent,
+    }
+    ,{
+        path: '/carpark/create',
+        name: 'CreateBus',
+        component: CreateBusComponent,
+    }
+    ,{
+        path: '/tickets',
+        name: 'ReservateTicket',
+        component: ReservateTicketComponent,
+    }
+    ,{
+        path: '/trips',
+        name: 'Trips',
+        component: TripsComponent,
+    }
+    ,{
+        path: '/trips/create',
+        name: 'CreateTrip',
+        component: TripsComponent,
     }
     ,{
         path: '/login',
@@ -53,6 +79,5 @@ import {AboutComponent} from "./about/about.component";
 ])
 
 export class AppComponent {
-  title = '@Carrier';
-  subtitle = 'from PassToBus'
+
 }
