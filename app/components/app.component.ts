@@ -41,53 +41,53 @@ import {BusTripsComponent} from "./carpark/bus-trips.component";
 
 @RouteConfig([
     {
-        path: '/about',
+        path: '/#/about',
         name: 'About',
         component: AboutComponent,
     }
     ,{
-        path: '/carpark',
+        path: '/#/carpark',
         name: 'CarPark',
         component: CarParkComponent,
     }
     ,{
-        path: '/carpark/bus/create',
+        path: '/#/carpark/bus/create',
         name: 'CreateBus',
         component: CreateBusComponent,
     }
     ,{
-        path: '/carpark/bus/edit',
+        path: '/#/carpark/bus/edit',
         name: 'EditBus',
         component: EditBusComponent,
     }
     ,{
-        path: '/carpark/bus/trips',
+        path: '/#/carpark/bus/trips',
         name: 'BusTrips',
         component: BusTripsComponent,
     }
     ,{
-        path: '/tickets',
+        path: '/#/tickets',
         name: 'ReservateTicket',
         component: ReservateTicketComponent,
     }
     ,{
-        path: '/trips',
+        path: '/#/trips',
         name: 'Trips',
         component: TripsComponent,
     }
     ,{
-        path: '/trips/create',
+        path: '/#/trips/create',
         name: 'CreateTrip',
         component: TripCreateComponent,
         useAsDefault: true
     }
     ,{
-        path: '/login',
+        path: '/#/login',
         name: 'Login',
         component: LoginComponent
     }
     ,{
-        path: '/logout',
+        path: '/#/logout',
         name: 'Logout',
         component: LogoutComponent
     }
