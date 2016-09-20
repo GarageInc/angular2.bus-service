@@ -81,53 +81,53 @@ System.register(['angular2/router', "angular2/core", "../services/user.service",
                     }),
                     router_1.RouteConfig([
                         {
-                            path: '/#/about',
+                            path: '/about',
                             name: 'About',
                             component: about_component_1.AboutComponent,
                         },
                         {
-                            path: '/#/carpark',
+                            path: '/carpark',
                             name: 'CarPark',
                             component: car_park_component_1.CarParkComponent,
                         },
                         {
-                            path: '/#/carpark/bus/create',
+                            path: '/carpark/bus/create',
                             name: 'CreateBus',
                             component: bus_create_component_1.CreateBusComponent,
                         },
                         {
-                            path: '/#/carpark/bus/edit',
+                            path: '/carpark/bus/edit',
                             name: 'EditBus',
                             component: bus_edit_component_1.EditBusComponent,
                         },
                         {
-                            path: '/#/carpark/bus/trips',
+                            path: '/carpark/bus/trips',
                             name: 'BusTrips',
                             component: bus_trips_component_1.BusTripsComponent,
                         },
                         {
-                            path: '/#/tickets',
+                            path: '/tickets',
                             name: 'ReservateTicket',
                             component: reservate_ticket_component_1.ReservateTicketComponent,
                         },
                         {
-                            path: '/#/trips',
+                            path: '/trips',
                             name: 'Trips',
                             component: trips_component_1.TripsComponent,
                         },
                         {
-                            path: '/#/trips/create',
+                            path: '/trips/create',
                             name: 'CreateTrip',
                             component: trip_create_component_1.TripCreateComponent,
                             useAsDefault: true
                         },
                         {
-                            path: '/#/login',
+                            path: '/login',
                             name: 'Login',
                             component: login_component_1.LoginComponent
                         },
                         {
-                            path: '/#/logout',
+                            path: '/logout',
                             name: 'Logout',
                             component: logout_component_1.LogoutComponent
                         }
