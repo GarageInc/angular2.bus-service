@@ -37,7 +37,7 @@ export class UserService extends BaseService{
 
                 if (res.id && res.pub_token) {
 
-                    UserState.activeUser.id = res.id;
+                    UserState.activeUser.user_id = res.id;
                     UserState.activeUser.pub_token = res.pub_token;
 
                     return true;

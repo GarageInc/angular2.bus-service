@@ -12,17 +12,14 @@ export class BaseService {
 
     protected GATEWAY:string;
 
-    protected static GATEWAY_GRAPHS:string = "http://php.sudo-rm-rf.ru/web/index.php/graph";
-    protected static GATEWAY_NODES:string = "http://php.sudo-rm-rf.ru/web/index.php/node";
-    protected static GATEWAY_EDGES:string = "http://php.sudo-rm-rf.ru/web/index.php/edge";
-    protected static GATEWAY_USER_LOGIN:string = "http://php.sudo-rm-rf.ru/web/index.php/site/login";
-    // protected static GATEWAY_USER_LOGIN:string = "http://php.sudo-rm-rf.ru/web/index.php/site/login";
+    protected static GATEWAY_BUSES:string = "http://127.0.0.1/web/index.php/buses";
+    protected static GATEWAY_USER_LOGIN:string = "http://127.0.0.1/web/index.php/site/login";
 
     constructor (protected http: Http) {}
 
     public setAuthParams(params:{[key:string] : string}){
 
-        params["uid"] = UserState.activeUser.id;
+        params["uid"] = UserState.activeUser.user_id;
         params["pub_token"] = UserState.activeUser.pub_token;
 
         return params;

@@ -30,8 +30,8 @@ System.register(['angular2/core', 'angular2/router'], function(exports_1, contex
                 TripsComponent = __decorate([
                     core_1.Component({
                         selector: 'trips',
-                        templateUrl: 'app/views/main.component.html',
-                        styleUrls: ['app/assets/css/main.component.css']
+                        templateUrl: 'app/views/trips/trips.component.html',
+                        styleUrls: ['app/assets/css/trips.component.css']
                     }), 
                     __metadata('design:paramtypes', [router_1.Router])
                 ], TripsComponent);

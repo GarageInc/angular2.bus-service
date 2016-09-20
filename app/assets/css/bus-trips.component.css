@@ -1,0 +1,451 @@
+/* Status panel */
+.status-panel {
+}
+
+.status-panel header h2 {
+    font: 400 2.125rem 'Roboto';
+    color: #333;
+    margin-bottom: 18px;
+}
+
+.status-panel .content {
+    position: relative;
+}
+
+.status-panel .content .progress {
+    display: inline-block;
+    max-width: 100%;
+}
+
+.status-panel .content .progress .title {
+    display: inline-block;
+}
+
+.status-panel .content .progress .title span {
+    text-transform: uppercase;
+    font: 400 1.75rem 'Roboto';
+}
+
+.status-panel .content .progress .strip {
+    position: relative;
+    width: 428px;
+    max-width: 100%;
+    height: 6px;
+    background-color: #e6e6e6;
+    border-radius: 3px;
+    display: inline-block;
+    margin: 0px 20px;
+}
+
+.status-panel .content .progress .strip .percent {
+    position: absolute;
+    top: -20px;
+    margin-left: -11px;
+    font: 400 1.75rem 'Roboto';
+    color: #85c48e;
+    transition: all .3s;
+}
+
+.status-panel .content .progress .strip .loading {
+    height: inherit;
+    border-radius: 3px;
+    background-color: #85c48e;
+    transition: all .3s;
+}
+
+.status-panel .content .status {
+    display: inline-block;
+    min-width: 120px;
+}
+
+.status-panel .content .status span {
+    font: italic 400 1.75rem 'Roboto';
+}
+
+.status-panel .content .cancel {
+    background: url('../images/design/cancel.png') no-repeat;
+    height: 32px;
+    position: absolute;
+    right: 0;
+    top: -43px;
+    width: 32px;
+}
+
+/* Add info */
+.add-info {
+
+}
+
+.add-info .content {
+
+}
+
+.add-info .content .left-side {
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+}
+
+.add-info .content .right-side {
+    display: inline-block;
+    width: 55%;
+    vertical-align: top;
+}
+
+.add-info .content .left-side .check-stop-type #bus-station,
+.add-info .content .left-side .check-stop-type #just-stop {
+    display: none;
+}
+
+.add-info .content .left-side .check-stop-type {
+    margin-bottom: 11px;
+}
+
+.add-info .content .left-side .check-stop-type p {
+    color: #757575;
+    font: 400 1.750rem 'Roboto' !important;
+}
+
+.add-info .content .left-side .check-stop-type label {
+    border-bottom: 3px solid #fff;
+    cursor: pointer;
+    display: inline-block;
+    font: 500 1.750rem/30px 'Roboto' !important;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.add-info .content .left-side .check-stop-type input[type="radio"]:checked + label {
+    border-bottom: 3px solid #ad4141;
+}
+
+.add-info .content .left-side .check-stop-type input[type="radio"]:not(:checked) + label {
+    border-bottom: 3px solid #fff;
+}
+
+
+.add-info .content .left-side .fields {
+    width: 100%;
+}
+
+.add-info .content .left-side .fields {
+    width: 100%;
+}
+
+.add-info .content .left-side .fields .field {
+
+}
+
+.add-info .content .left-side .fields .field label {
+    width: 100%;
+    margin-left: -1px;
+}
+
+.add-info .content .left-side .fields .half {
+    display: inline-block;
+    width: 100%;
+}
+
+.add-info .content .left-side .fields .half label {
+    display: inline-block;
+    margin-right: 1.297169811320755%;
+    width: 50%;
+    margin-left: -1px;
+}
+
+.add-info .content .left-side .fields .half .add-stop {
+    display: inline-block;
+    float: right;
+    height: 53px;
+    margin: 0 -1px 0 0;
+    vertical-align: top;
+    width: 48%;
+}
+
+/* Stop list */
+.stop-list {
+    padding: 26px 0;
+}
+
+.stop-list header {
+    font: 400 1.750rem 'Roboto' !important;
+    color: #757575;
+    text-transform: uppercase;
+}
+
+.stop-list header p {
+    height: 28px !important;
+}
+
+.stop-list header p span {
+    font: 400 1.750rem/28px 'Roboto' !important;
+    color: #757575;
+    text-transform: uppercase;
+    vertical-align: top;
+}
+
+.stop-list .content {
+
+}
+
+.stop-list .content ul {
+    width: 100%;
+    list-style: none;
+}
+
+.stop-list .content ul li {
+    background-color: #fff;
+    display: block;
+}
+
+.stop-list .content ul li input[type="radio"] {
+    display: none;
+}
+
+.stop-list .content ul li label {
+    background: url(../images/design/stop-list-last.png) no-repeat 20px 0,
+    url(../images/design/stop-list-first.png) no-repeat 20px 0;
+    cursor: pointer;
+    display: block;
+    min-height: 58px;
+}
+
+.stop-list .content ul li:first-child label {
+    background: url(../images/design/stop-list-first.png) no-repeat 20px 0;
+}
+
+.stop-list .content ul li:last-child label {
+    background: url(../images/design/stop-list-last.png) no-repeat 20px 0;
+}
+
+.stop-list .content ul li input[type="radio"]:not(:checked) + label {
+    background-color: #fff;
+}
+
+.stop-list .content ul li label:hover,
+.stop-list .content ul li input[type="radio"]:checked + label {
+    background-color: #f9f9f9;
+}
+
+.stop-list header p,
+.stop-list .content ul li label p {
+    display: inline-block;
+    font: 300 0.750rem 'Roboto';
+    height: 58px;
+    vertical-align: middle;
+}
+
+.stop-list header .address,
+.stop-list .content ul li label .info {
+    margin-left: 2.22222222222222%;
+    padding-left: 3.33333333333333%;
+    width: 51.11111111111111%;
+}
+
+.stop-list .content ul li label .info .address {
+    display: block;
+    font: 400 0.875rem/19px 'Roboto';
+    margin-top: 3px;
+}
+
+.stop-list .content ul li label .info .description {
+    display: block;
+    font: 300 0.750rem/18px 'Roboto';
+}
+
+.stop-list header .distance,
+.stop-list .content ul li label .distance {
+    line-height: 58px;
+    width: 16.66666666666667%;
+}
+
+.stop-list header .stop-for,
+.stop-list .content ul li label .stop-for {
+    line-height: 58px;
+    width: 15.11111111111111%;
+}
+
+.stop-list .content ul li label .remove-stop {
+    background: url(../images/design/stop-list-delete.png) no-repeat center center;
+    cursor: pointer;
+    width: 11.33333333333333%;
+}
+
+.stop-list .content ul li label .remove-stop:hover {
+    background-color: #eee;
+}
+
+
+/* Next step */
+.next-step .next-step-button {
+    float: right;
+}
+
+/*  */
+.add-schedule-info .fields .field label,
+.add-schedule-info .fields .field input[type="button"] {
+    width: 100%;
+}
+
+.add-schedule-info .fields .field {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.add-schedule-info .fields .fourth {
+    width: 25%;
+}
+
+.add-schedule-info .fields .half {
+    margin: 0 1.297169811320755%;
+    width: 47.40566037735849%;
+}
+
+.add-schedule-info .fields .add-schedule {
+    height: 53px;
+    margin: 0;
+}
+
+.departure .departure-list {
+    display: block;
+    height: 40px;
+    margin-bottom: -27px;
+}
+
+.departure .departure-list li {
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    display: inline-block;
+    height: 37px;
+    margin-right: 10px;
+    position: relative;
+    width: 155px;
+    height: 90px;
+}
+
+.departure .departure-list .active {
+    border-bottom: 3px solid #ad4141;
+}
+
+.departure .departure-list li .time {
+    color: #212121;
+    font: 400 2.125rem 'Roboto';
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+.departure .departure-list li .days {
+    bottom: 3px;
+    color: #212121;
+    font: 400 1.625rem 'Roboto';
+    left: 1px;
+    position: absolute;
+}
+
+.departure .departure-list li .close {
+    background: url(app/assets/images/design/cancel-14.png) no-repeat;
+    cursor: pointer;
+    display: block;
+    height: 16px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 16px;
+}
+
+/*  */
+.departure-price .fields .field label,
+.departure-price .fields .field input[type="button"],
+.additional-info .fields .field label,
+.additional-info .fields .field input[type="button"] {
+    height: 53px;
+    margin: 0;
+    width: 100%;
+}
+
+.departure-price .fields .field,
+.additional-info .fields .field {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.departure-price .fields .field:last-child,
+.additional-info .fields .field:last-child {
+    margin: 0;
+}
+
+.departure-price .fields .fourth,
+.additional-info .fields .fourth {
+    margin-right: 1.297169811320755%;
+    width: 23.70283018867925%;
+}
+
+.departure-price .fields .fiveth,
+.additional-info .fields .fiveth {
+    margin-right: 1.297169811320755%;
+    width: 18.70283018867925%;
+}
+
+.departure-price .fields .tenth,
+.additional-info .fields .tenth {
+    margin-right: 1.297169811320755%;
+    width: 8.702830188679245%;
+}
+
+.departure-price .fields .half,
+.additional-info .fields .half {
+    margin-right: 1.297169811320755%;
+    width: 48.70283018867925%;
+}
+
+.departure-price .fields .add-schedule,
+.additional-info .fields .add-schedule {
+    height: 53px;
+    margin: 0;
+}
+
+
+@media (max-width: 578px) {
+    .status-panel .content .progress .strip {
+        max-width: 91.84549356223176%;
+        margin: 0 4.291845493562232%;
+    }
+    .status-panel .content .status {
+        display: block;
+        text-align: center;
+    }
+    .main-info .content .third .field {
+        width: 49.11556603773585%;
+    }
+    .main-info .content .third .field:nth-child(2) {
+        margin-right: 0;
+        width: 49.11556603773585%;
+    }
+    .main-info .content .third .field:nth-child(3) {
+        margin-right: 0;
+        width: 100%;
+    }
+}
+@media (max-width: 480px) {
+    .main-info .content .half .field {
+        width: 100%;
+        margin-right: 0;
+    }
+    .main-info .content .third .field {
+        width: 100% !important;
+        margin-right: 0;
+    }
+    .additional-info .content .left-side,
+    .additional-info .content .right-side {
+        display: block;
+        width: 100%;
+    }
+    .seats-scheme .content .left-side,
+    .seats-scheme .content .right-side {
+        display: block;
+        width: 100%;
+    }
+}

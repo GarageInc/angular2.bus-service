@@ -2,6 +2,7 @@ import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from 'angular2/route
 import {Component, ViewEncapsulation} from "angular2/core";
 
 import {UserService} from "../services/user.service";
+import {BusService} from "../services/bus.service";
 //
 import { LoggedInRouterOutlet } from "../directives/logged-in-router-outlet";
 import { LoginComponent } from './user/login.component';
@@ -12,9 +13,12 @@ import {LogoutComponent} from "./user/logout.component";
 import {MainComponent} from "./main.component";
 import {AboutComponent} from "./about/about.component";
 import {CarParkComponent} from "./carpark/car-park.component";
-import {CreateBusComponent} from "./carpark/create-bus.component";
+import {CreateBusComponent} from "./carpark/bus-create.component";
 import {ReservateTicketComponent} from "./tickets/reservate-ticket.component";
 import {TripsComponent} from "./trips/trips.component";
+import {EditBusComponent} from "./carpark/bus-edit.component";
+import {TripCreateComponent} from "./trips/trip-create.component";
+import {BusTripsComponent} from "./carpark/bus-trips.component";
 
 @Component({
     encapsulation: ViewEncapsulation.None,
@@ -28,8 +32,9 @@ import {TripsComponent} from "./trips/trips.component";
       LoggedInRouterOutlet
     ],
     providers: [
-    ROUTER_PROVIDERS,
-    UserService
+        ROUTER_PROVIDERS,
+        UserService,
+        BusService
     ]
 })
 
@@ -39,7 +44,6 @@ import {TripsComponent} from "./trips/trips.component";
         path: '/about',
         name: 'About',
         component: AboutComponent,
-        useAsDefault: true
     }
     ,{
         path: '/carpark',
@@ -47,9 +51,19 @@ import {TripsComponent} from "./trips/trips.component";
         component: CarParkComponent,
     }
     ,{
-        path: '/carpark/create',
+        path: '/carpark/bus/create',
         name: 'CreateBus',
         component: CreateBusComponent,
+    }
+    ,{
+        path: '/carpark/bus/edit',
+        name: 'EditBus',
+        component: EditBusComponent,
+    }
+    ,{
+        path: '/carpark/bus/trips',
+        name: 'BusTrips',
+        component: BusTripsComponent,
     }
     ,{
         path: '/tickets',
@@ -64,7 +78,8 @@ import {TripsComponent} from "./trips/trips.component";
     ,{
         path: '/trips/create',
         name: 'CreateTrip',
-        component: TripsComponent,
+        component: TripCreateComponent,
+        useAsDefault: true
     }
     ,{
         path: '/login',

@@ -29,12 +29,11 @@ System.register(['angular2/core', 'angular2/http', 'rxjs/Observable', 'rxjs/Rx',
             }],
         execute: function() {
             BaseService = (function () {
-                // protected static GATEWAY_USER_LOGIN:string = "http://php.sudo-rm-rf.ru/web/index.php/site/login";
                 function BaseService(http) {
                     this.http = http;
                 }
                 BaseService.prototype.setAuthParams = function (params) {
-                    params["uid"] = user_state_1.UserState.activeUser.id;
+                    params["uid"] = user_state_1.UserState.activeUser.user_id;
                     params["pub_token"] = user_state_1.UserState.activeUser.pub_token;
                     return params;
                 };
@@ -97,10 +96,8 @@ System.register(['angular2/core', 'angular2/http', 'rxjs/Observable', 'rxjs/Rx',
                     // this.router.navigate(['Dashboard']);
                     return Observable_1.Observable.throw(errMsg);
                 };
-                BaseService.GATEWAY_GRAPHS = "http://php.sudo-rm-rf.ru/web/index.php/graph";
-                BaseService.GATEWAY_NODES = "http://php.sudo-rm-rf.ru/web/index.php/node";
-                BaseService.GATEWAY_EDGES = "http://php.sudo-rm-rf.ru/web/index.php/edge";
-                BaseService.GATEWAY_USER_LOGIN = "http://php.sudo-rm-rf.ru/web/index.php/site/login";
+                BaseService.GATEWAY_BUSES = "http://127.0.0.1/web/index.php/buses";
+                BaseService.GATEWAY_USER_LOGIN = "http://127.0.0.1/web/index.php/site/login";
                 BaseService = __decorate([
                     core_1.Injectable(), 
                     __metadata('design:paramtypes', [http_1.Http])

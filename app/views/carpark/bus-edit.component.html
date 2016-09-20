@@ -1,0 +1,142 @@
+<div class="from-top">
+    <!-- Status panel -->
+    <article class="status-panel">
+        <header><h2>Добавление автобуса</h2></header>
+        <div class="content">
+            <div class="progress" style="width: 100%;   height: 40px;    padding: 10px 10px 20px 20px;">
+                <div class="title"><span>Прогресс</span></div>
+                <div class="strip">
+                    <span class="percent" style="right: 0px;">0%</span>
+                    <div class="loading" style="width: 0%;"></div>
+                </div>
+            </div>
+            <div class="status"><span>Сохранено</span></div>
+            <div class="cancel"></div>
+        </div>
+    </article>
+
+    <!-- Errors -->
+    <article class="errors" style="display:none;">
+
+    </article>
+
+    <!-- Main info -->
+    <article class="main-info">
+        <header><h2>Добавьте информацию об автобусе</h2></header>
+        <div style="height: 250px;">
+            <div style="width: 45%; float:right;">
+                <div class="second">
+                    <div class="get-photo" style="width: 100%;">
+                        <label>Фото автобуса</label>
+                        <input type="file">
+                    </div>
+                </div>
+            </div>
+            <div class="content"  style="width: 50%">
+                <div>
+                    <div class="fields third"><!-- Brand -->
+                        <div class="field" style="width: 48%">
+                            <label class="text brand">
+					<span class="name">
+						Марка автобуса
+					</span>
+                                <input type="text" name="brand" placeholder="Введите марку"/>
+                            </label>
+                        </div>
+                        <div class="field" style="width: 48%">
+                            <label class="text model">
+					<span class="name">
+						Модель автобуса
+					</span>
+                                <input type="text" name="model" placeholder="Введите модель"/>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="fields third">
+                        <div class="field" style="width: 48%">
+                            <label class="text year">
+					<span class="name">
+						Год выпуска
+					</span>
+                                <input type="text" name="year" placeholder="Введите год выпуска"/>
+                            </label>
+                        </div>
+                        <div class="field" style="width: 48%">
+                            <label class="text state-number">
+                        <span class="name">
+                            Государственный номер
+                        </span>
+                                <input type="text" name="state_number" placeholder="XX 123 X 123">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="fields">
+                        <div class="field" style="width: 98%;">
+                            <label class="text owner">
+                        <span class="name">
+                            Свидетельство о регистрации
+                        </span>
+                                <input type="text" placeholder="Введите организацию" name="owner"/>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- Additional info -->
+    <article class="additional-info">
+        <header><h2>Дополнительные свойства</h2></header>
+        <div class="content">
+            <div class="left-side">
+                <input id="conditioner" type="checkbox" name="conditioner">
+                <label for="conditioner">Кондиционер</label>
+                <input id="recliners" type="checkbox" name="recliners">
+                <label for="recliners">Откидывающиеся кресла</label>
+                <input id="belts" type="checkbox" name="belts">
+                <label for="belts">Ремни безопасности</label>
+                <input id="restroom" type="checkbox" name="restroom">
+                <label for="restroom">Туалет</label>
+            </div>
+        </div>
+    </article>
+
+    <!-- Seats scheme -->
+    <article class="seats-scheme" style="display: none;">
+        <header>
+            <h2>Схема <span></span> мест</h2>
+        </header>
+        <div class="content">
+            <div class="left-side">
+                <p>Первый этаж</p>
+                <div class="v-panel">
+                    <a class="remove-row"><i class="fa fa-minus fa-rotate-90" aria-hidden="true" style="margin-left: -2px;"></i></a>
+                    <div class="h-panel">
+                        <a class="remove-col"><i class="fa fa-minus" aria-hidden="true"></i></a>
+                        <i class="fa fa-arrows" aria-hidden="true"></i>
+                        <a class="add-col"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                    </div>
+                    <a class="add-row"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                </div>
+                <div class="seats"></div>
+            </div><!--
+	 --><div class="right-side">
+            <p>Второй этаж</p>
+            <div class="v-panel">
+                <a class="remove-row"><i class="fa fa-minus fa-rotate-90" aria-hidden="true" style="margin-left: -2px;"></i></a>
+                <div class="h-panel">
+                    <a class="remove-col"><i class="fa fa-minus" aria-hidden="true"></i></a>
+                    <i class="fa fa-arrows" aria-hidden="true"></i>
+                    <a class="add-col"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                </div>
+                <a class="add-row"><i class="fa fa-plus" aria-hidden="true"></i></a>
+            </div>
+            <div class="seats"></div>
+        </div>
+        </div>
+    </article>
+    <article class="save clearfix">
+        <input class="save-button red-button" type="button" href="#autopark" value="Сохранить">
+    </article>
+</div>

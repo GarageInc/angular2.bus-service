@@ -4,8 +4,8 @@ import { Router } from 'angular2/router';
 
 @Component({
   selector: 'trips',
-  templateUrl: 'app/views/main.component.html',
-  styleUrls: ['app/assets/css/main.component.css']
+  templateUrl: 'app/views/trips/trips.component.html',
+  styleUrls: ['app/assets/css/trips.component.css']
 })
 
 

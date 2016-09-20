@@ -42,7 +42,7 @@ System.register(["./base/Synchronizable"], function(exports_1, context_1) {
                     enumerable: true,
                     configurable: true
                 });
-                Object.defineProperty(User.prototype, "id", {
+                Object.defineProperty(User.prototype, "user_id", {
                     get: function () {
                         return localStorage.getItem("id");
                     },

@@ -1,7 +1,15 @@
 /* Text and Drop-down (select) */
+.ng-valid[required] {
+	border-left: 5px solid #42A948; /* green */
+}
+
+.ng-invalid {
+	border-left: 5px solid #a94442; /* red */
+}
 
 .text {
 	cursor: text;
+	height: 65px;
 }
 
 .text,
@@ -10,17 +18,17 @@
 	border-radius: 2px;
 	background-color: rgb(255, 255, 255);
 	display: block;
-	height: 52px;
 	max-width: 100%;
 	position: relative;
 	width: 213px;
+	height: 65px;
 }
 
 .text .name,
 .drop-down .name {
 	color: #757575;
 	display: block;
-	font: 400 .75rem/33px 'Roboto';
+	font: 400 1.75rem/33px 'Roboto';
 	height: 33px;
 	left: 0;
 	max-width: 100%;
@@ -96,7 +104,7 @@
 	border: 0;
 	bottom: 0;
 	display: block;
-	font: 300 0.875rem/29px 'Roboto';
+	font: 300 1.875rem/29px 'Roboto';
 	left: 0;
 	line-height: 30px;
 	outline: 0;
@@ -109,7 +117,7 @@
 .drop-down {
 	background: url(app/assets/images/design/drop-down-arrow.png) no-repeat center right;
 	cursor: pointer;
-	height: 54px;
+	height: 65px;
 	text-align: left;
 	width: 215px;
 }
@@ -203,7 +211,7 @@ input[type="submit"],
 	background-color: transparent;
 	border-radius: 3px;
 	display: inline-block;
-	font: 400 0.75rem/39px 'Roboto';
+	font: 400 1.75rem/39px 'Roboto';
 	margin: 0 6px;
 	padding: 1px 10px 0;
 	text-transform: uppercase;

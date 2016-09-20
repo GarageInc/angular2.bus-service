@@ -11,7 +11,7 @@ System.register(['angular2/core', 'angular2/router'], function(exports_1, contex
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1, router_1;
-    var CreateTripComponent;
+    var EditBusComponent;
     return {
         setters:[
             function (core_1_1) {
@@ -21,24 +21,25 @@ System.register(['angular2/core', 'angular2/router'], function(exports_1, contex
                 router_1 = router_1_1;
             }],
         execute: function() {
-            CreateTripComponent = (function () {
-                function CreateTripComponent(_router) {
+            EditBusComponent = (function () {
+                function EditBusComponent(_router) {
                     this._router = _router;
                 }
-                CreateTripComponent.prototype.ngOnInit = function () {
+                EditBusComponent.prototype.ngOnInit = function () {
                 };
-                CreateTripComponent = __decorate([
+                EditBusComponent = __decorate([
                     core_1.Component({
-                        selector: 'create-trip',
-                        templateUrl: 'app/views/main.component.html',
-                        styleUrls: ['app/assets/css/main.component.css']
+                        encapsulation: core_1.ViewEncapsulation.None,
+                        selector: 'bus-edit',
+                        templateUrl: 'app/views/carpark/bus-edit.component.html',
+                        styleUrls: ['app/assets/css/bus-edit.component.css']
                     }), 
                     __metadata('design:paramtypes', [router_1.Router])
-                ], CreateTripComponent);
-                return CreateTripComponent;
+                ], EditBusComponent);
+                return EditBusComponent;
             }());
-            exports_1("CreateTripComponent", CreateTripComponent);
+            exports_1("EditBusComponent", EditBusComponent);
         }
     }
 });
-//# sourceMappingURL=create-trip.component.js.map
+//# sourceMappingURL=bus-edit.component.js.map

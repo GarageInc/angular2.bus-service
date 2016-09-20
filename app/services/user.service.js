@@ -53,7 +53,7 @@ System.register(['angular2/core', 'angular2/http', 'rxjs/Rx', "./base/base.servi
                         .map(function (res) { return res.json(); })
                         .map(function (res) {
                         if (res.id && res.pub_token) {
-                            user_state_1.UserState.activeUser.id = res.id;
+                            user_state_1.UserState.activeUser.user_id = res.id;
                             user_state_1.UserState.activeUser.pub_token = res.pub_token;
                             return true;
                         }

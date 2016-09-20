@@ -1,6 +1,11 @@
 import {Synchronizable} from "./base/Synchronizable";
+import {Carrier} from "./carrier";
 
 export class User extends Synchronizable {
+
+    username:string;
+
+    carrier:Carrier;
 
     reset(){
         localStorage.clear()
@@ -20,11 +25,11 @@ export class User extends Synchronizable {
         localStorage.setItem("pub_secret", pub_secret);
     }
 
-    get id():string {
+    get user_id():string {
 
         return localStorage.getItem("id");
     }
-    set id(id:string) {
+    set user_id(id:string) {
         localStorage.setItem("id", id);
     }
 

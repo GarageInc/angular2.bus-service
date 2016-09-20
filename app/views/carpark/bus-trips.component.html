@@ -1,0 +1,199 @@
+<div class="from-top">
+    <!-- Status panel -->
+    <article class="status-panel">
+        <header><h2>Добавление нового маршрута</h2></header>
+        <div class="content">
+            <div class="progress" style="width: 100%;   height: 40px;    padding: 10px 10px 20px 20px;">
+                <div class="title"><span>Прогресс</span></div>
+                <div class="strip">
+                    <span class="percent" style="right: 0px;">0%</span>
+                    <div class="loading" style="width: 0%;"></div>
+                </div>
+            </div>
+            <div class="status"><span>Сохранено</span></div>
+            <div class="cancel"></div>
+        </div>
+    </article>
+    <!-- Errors -->
+    <article class="errors" style="display:none;">
+
+    </article>
+    <!-- Add schedule info -->
+    <article class="add-schedule-info">
+        <header><h2>Добавьте информацию о расписании</h2></header>
+        <div class="content">
+            <div class="fields">
+                <div class="field fourth">
+                    <div class="text departure-time">
+                        <span class="name">
+                            Время отправления
+                        </span>
+                        <input type="text" name="departure_time" placeholder="00:00">
+                    </div>
+                </div>
+                <div class="field half">
+                    <div class="text regularity" style="width: 600px;">
+                        <span class="name">
+                            Регулярность
+                        </span>
+
+                        <div style="display: inline-flex;
+        position: relative;
+        top: 25px;
+        left: 10px;">
+                            <div *ngFor="#day of daysInWeek" style="margin-right: 10px;" >
+                                <input type="checkbox" id="bus1" [(ngModel)]="day.is_selected"/>
+                                <label for="bus1">{{day.name}}</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field fourth" style="width: 200px;    float: right;">
+                    <input type="button" class="add-schedule red-button" value="Добавить">
+                </div>
+            </div>
+        </div>
+    </article>
+    <!-- Departure -->
+    <article class="departure" style="height: 200px;overflow-y: auto;">
+        <header><h2><span>3</span> отправления</h2></header>
+        <div class="content">
+            <ul class="departure-list">
+                <li class="active">
+                    <span class="time">10:00</span>
+                    <span class="days">Выбранные дни: Пн, Вт, Пт</span>
+                    <span class="close"></span>
+                </li>
+                <li>
+                    <span class="time">13:30</span>
+                    <span class="days">Ежедневно</span>
+                    <span class="close"></span>
+                </li>
+            </ul>
+        </div>
+    </article>
+    <!-- Departure price -->
+    <article class="departure-price">
+        <div class="content">
+            <div class="fields">
+                <div class="field fourth" style="width:500px;">
+                    <div class="drop-down price-type" style="width:500px;">
+                        <span class="name">
+                            Принцип формирования цены
+                        </span>
+                        <span class="value">
+                            Цена за километр пути
+                        </span>
+                        <ul class="options">
+                            <li><div><input type="radio" value="1" name="price_type" checked>Цена за километр пути</div></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="field fourth" >
+                    <div class="text price" style="width:500px;">
+                        <span class="name">
+                            Стоимость километра
+                        </span>
+                        <input type="text" name="price" placeholder="В рублях"/>
+                    </div>
+                </div>
+                <div class="field half">
+                    <div class="text bus" style="width:500px;">
+                        <span class="name">
+                            Автобус
+                        </span>
+                        <input type="text" name="bus" placeholder="Введите данные автобуса"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <!-- price-table -->
+    <article class="price-table">
+        <div class="content">
+        </div>
+    </article>
+    <!-- additional-info -->
+    <article class="additional-info">
+        <header><h2>Багаж</h2></header>
+        <div class="content">
+            <div class="fields">
+                <div class="field fourth">
+                    <button class="drop-down price-type">
+					<span class="name">
+						Стоимость багажа
+					</span>
+					<span class="value">
+						Выберете из списка
+					</span>
+                        <ul class="options">
+                            <li><div><input type="radio" value="1" name="price_type" checked>% от стоимости билета</div></li>
+                        </ul>
+                    </button>
+                </div><!--
+		!--><div class="field fourth">
+                <div class="text price">
+					<span class="name">
+						% стоимости билета
+					</span>
+                    <input type="text" name="price" placeholder="В процентах">
+                </div>
+            </div>
+            </div>
+        </div>
+        <header><h2>Льготы</h2></header>
+        <div class="content">
+            <div class="fields">
+                <div class="field fourth">
+                    <button class="drop-down price-type">
+					<span class="name">
+						Вид льготы
+					</span>
+					<span class="value">
+						Выберете из списка
+					</span>
+                        <ul class="options">
+                            <li><div><input type="radio" value="1" name="price_type" checked>Детский билет</div></li>
+                        </ul>
+                    </button>
+                </div><!--
+		!--><div class="field fourth">
+                <button class="drop-down price-type">
+					<span class="name">
+						Условие
+					</span>
+					<span class="value">
+						Выберете из списка
+					</span>
+                    <ul class="options">
+                        <li><div><input type="radio" value="1" name="price_type" checked>Возраст до</div></li>
+                    </ul>
+                </button>
+            </div><!--
+		!--><div class="field fiveth">
+                <div class="text price">
+					<span class="name">
+						Возраст
+					</span>
+                    <input type="text" name="age" placeholder="Возраст">
+                </div>
+            </div><!--
+		!--><div class="field fiveth">
+                <div class="text discount">
+					<span class="name">
+						Размер скидки
+					</span>
+                    <input type="text" name="discount" placeholder="В процентах">
+                </div>
+            </div><!--
+		!--><div class="field tenth">
+                <input type="button" class="add-benefit red-button" value="Добавить" (click)="add()">
+            </div>
+            </div>
+        </div>
+    </article>
+    <article class="save clearfix">
+        <a href="#" class="back-button button green-button" (click)="goBack()">Назад</a>
+        <a class="save-button button red-button right" (click)="save()">Завершить</a>
+    </article>
+</div>
