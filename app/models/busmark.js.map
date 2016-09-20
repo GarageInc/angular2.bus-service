@@ -1,1 +1,1 @@
-{"version":3,"file":"busmark.js","sourceRoot":"","sources":["busmark.ts"],"names":["BusMark","BusMark.constructor"],"mappings":";;;;;;;;;;;;;;YAEA;gBAA6BA,2BAAcA;gBAA3CA;oBAA6BC,8BAAcA;gBAI3CA,CAACA;gBAADD,cAACA;YAADA,CAACA,AAJD,EAA6B,+BAAc,EAI1C;YAJD,6BAIC,CAAA"}
+{"version":3,"file":"busmark.js","sourceRoot":"","sources":["busmark.ts"],"names":[],"mappings":";;;;;;;;;;;;;;;;YAEA;gBAA6B,2BAAc;gBAA3C;oBAA6B,8BAAc;gBAI3C,CAAC;gBAAD,cAAC;YAAD,CAAC,AAJD,CAA6B,+BAAc,GAI1C;YAJD,6BAIC,CAAA"}
